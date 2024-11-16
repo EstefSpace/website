@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PICO CSS FRAMEWORK -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/avatars/717963226913964126/02bbf1e149dbca70e014c994197761e7.png?size=2048"
+    />
+
+    <title>Estef - Portafolio</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="/"><strong>estefdev</strong></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="#"
+              id="change-theme"
+              class="contrast"
+              data-tooltip="Cambia el tema"
+              data-placement="bottom"
+              ><i id="icon-theme" class="fa-solid fa-moon"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="/portafolio.html"
+              class="contrast"
+              data-tooltip="Portafolio"
+              data-placement="bottom"
+              ><i class="fa-solid fa-briefcase"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="contrast"
+              data-tooltip="Información"
+              data-placement="bottom"
+              ><i class="fa-solid fa-circle-info"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="contrast"
+              data-tooltip="Proyectos"
+              data-placement="bottom"
+              ><i class="fa-solid fa-eye"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="/card.html"
+              class="contrast"
+              data-tooltip="Card"
+              data-placement="bottom"
+              ><i class="fa-solid fa-id-card"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div style="display: flex; justify-content: center; height: 70vh">
+        <div style="align-self: center">
+          <div class="grid">
+            <div>
+              <hgroup>
+                <h1>
+                  ¡Bienvenido a mi
+                  <span
+                    id="typed-portafolio"
+                    style="
+                      background: linear-gradient(to right, blue, violet);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    "
+                  ></span
+                  >!
+                </h1>
+                <p>
+                  Breve introduccion: Esta es el apartado de mi web personal
+                  donde puedo mostrar mis proyectos como programador, mi
+                  contacto, mis habilidades, etc. Si buscas a alguien que sepa
+                  desarrollo web y creacion de bots de discord con nodejs estoy
+                  aqui para ti.
+                </p>
+                <hr />
+                <a
+                  role="button"
+                  href="https://github.com/EstefSpace"
+                  style="color: white"
+                  data-tooltip="Mi GitHub"
+                  data-placement="bottom"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-github"></i> <b>GitHub</b></a
+                >
+              </hgroup>
+            </div>
+            <div>
+              <img
+                src="https://cdn.discordapp.com/avatars/717963226913964126/02bbf1e149dbca70e014c994197761e7.png?size=2048"
+                style="border-radius: 50%; width: 200px; height: 200px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div>
+        <article id="about">
+          <header>
+            <img
+              style="border-radius: 50%; width: 32px; height: 32px"
+              src="https://cdn.discordapp.com/avatars/717963226913964126/02bbf1e149dbca70e014c994197761e7.png?size=2048"
+              alt="La foto de perfil de estef.dev"
+              title="estef.dev"
+            />
+            estef.dev
+          </header>
+
+          <h3>¿Como conoci la programación?</h3>
+          <hr />
+
+          <p>
+            Mi primer contacto con la programacion si no me equivoco fue con un
+            bot de discord, la verdad que no entendia nada,
+            <mark>tarde 1 semana en poder prender mi primer bot</mark> pero lo
+            disfrute mucho, en ese tiempo no tenia la idea de programar por
+            gusto, solo hacia porque tenia un servidor de discord. Pero más
+            tarde vi que mucha gente compartia su bot y yo tambien queria
+            hacerlo, es decir, hacer un bot publico.
+          </p>
+
+          <p>
+            Abandone ese proyecto del bot que se llamaba <mark>Duck Bot</mark> y
+            empeze a ver sobre desarrollo web, siempre me preguntaba "¿Cómo es
+            que se hacen los sitios webs que visito?", fue asi como conoci a
+            <mark>HTML y CSS</mark>, estuve probando pero nunca me salia las
+            paginas que tenia en mente, luego tambien intente hacer otros bots
+            para poder verificarlos, ese era mi sueño principal por asi decirlo.
+          </p>
+
+          <p>
+            Y con eso llegamos al presente, ahora estoy trabajando en un bot
+            llamado <mark>RabbitBot</mark>, puedes ver más informacion de este
+            proyecto en <a href="/portafolio.html#projects">mis proyectos.</a>.
+          </p>
+
+          <footer>Este articulo fue escrito el 14 de noviembre del 2024</footer>
+        </article>
+      </div>
+
+      <div id="projects">
+        <h2>Proyectos</h2>
+        <hr />
+
+        <div class="grid">
+          <div>
+            <article>
+              <header>
+                <h3>RabbitBot</h3>
+              </header>
+              <p>
+                Un bot multifuncional de Discord con más de 80 funciones, con
+                sistemas como bienvenidas, despedidas, tickets con base de
+                datos, poder buscar en google, etc, etc.
+              </p>
+
+              <small
+                >Este es una foto del bot de pruebas pero es la misma
+                cosa.</small
+              >
+              <hr />
+              <img
+                style="border-radius: 10px"
+                src="https://cdn.discordapp.com/attachments/1281452915361321026/1307143776929714276/image.png?ex=67393c01&is=6737ea81&hm=801dc04aa5f1678cc8ad8b80ce3a1438f016f39a2b511e0f34c352ffe1e55b7f&"
+                alt="Preview del proyecto"
+                title="Comando /musica search"
+              />
+              <footer>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://fwrd.lol/RabbitSoporte"
+                  role="button"
+                  style="color: white"
+                  ><i class="fa-solid fa-eye"></i> Preview</a
+                >
+                <hr />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  role="button"
+                  style="color: white"
+                  ;
+                  disabled
+                  ><i class="fa-brands fa-github"></i> Codigo Privado</a
+                >
+              </footer>
+            </article>
+          </div>
+          <div>
+            <article>
+              <header>
+                <h3>Minimalist New Tab</h3>
+              </header>
+              <p>
+                Una extension de Chrome que reemplaza la nueva pestaña
+                preterminada del navegador, por una más minimalista y linda.
+              </p>
+
+              <small>Una vista de esta extension de Chrome</small>
+              <hr />
+              <img
+                src="https://cdn.discordapp.com/attachments/1255416254609756211/1307197226925424700/image.png?ex=67396dc9&is=67381c49&hm=9f893d17a099f01a0420b7febc6173c6c29ee69676d47f4e1aef86e0c1357952&"
+                alt="Foto de la extension"
+                title="¡Que gran extension!"
+              />
+              <footer>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://estefspace.github.io/Minimalist-New-Tab/new_tab.html"
+                  role="button"
+                  style="color: white"
+                  ><i class="fa-solid fa-eye"></i> Preview</a
+                >
+                <hr />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/EstefSpace/Minimalist-New-Tab"
+                  role="button"
+                  style="color: white"
+                >
+                  <i class="fa-brands fa-github"></i> Codigo Abierto</a
+                >
+              </footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container" style="text-align: center">
+      <b>Hecho con ❤ por estef.dev</b>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      //portafolio
+
+      new Typed('#typed-portafolio', {
+        strings: ['portafolio digital', 'rincon digital', 'lugar seguro'],
+        typeSpeed: 80,
+        loop: true,
+      });
+    </script>
+    <script src="changeTheme.js"></script>
+  </body>
+</html>

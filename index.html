@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- PICO CSS FRAMEWORK -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.discordapp.com/avatars/717963226913964126/02bbf1e149dbca70e014c994197761e7.png?size=2048"
+    />
+ 
+
+
+    <title>Estef - Web personal</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="/"><strong>estefdev</strong></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="#"
+              id="change-theme"
+              class="contrast"
+              data-tooltip="Cambia el tema"
+              data-placement="bottom"
+              ><i id="icon-theme" class="fa-solid fa-moon"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="/portafolio.html"
+              class="contrast"
+              data-tooltip="Portafolio"
+              data-placement="bottom"
+              ><i class="fa-solid fa-briefcase"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="#about-me"
+              class="contrast"
+              data-tooltip="Sobre mi"
+              data-placement="bottom"
+              ><i class="fa-solid fa-circle-info"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="/card.html"
+              class="contrast"
+              data-tooltip="Card"
+              data-placement="bottom"
+              ><i class="fa-solid fa-id-card"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div
+        style="display: flex; justify-content: center; height: 80vh"
+        class="hero"
+      >
+        <div style="align-self: center">
+          <div style="text-align: center">
+            <h1>
+              ¡Bienvenido a mi pagina web! Soy<br />
+              <span
+                id="typed-index"
+                style="
+                  background: linear-gradient(to right, blue, violet);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              ></span
+              >.
+            </h1>
+            <hr />
+            <a href="#about-me" role="button"
+              ><i class="fa-solid fa-circle-info"></i> Sobre mi</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="about-me">
+        <hgroup>
+          <h2>Sobre mi</h2>
+          <p>
+            Obten más informacion sobre mi vida, por ejemplo que cosas me
+            gustan, que estoy estudiando actualmente, cual es mi edad, etc.
+          </p>
+        </hgroup>
+
+        <article>
+          <header>
+            <img
+              style="border-radius: 50%; width: 32px; height: 32px"
+              src="https://cdn.discordapp.com/avatars/717963226913964126/02bbf1e149dbca70e014c994197761e7.png?size=2048"
+              alt="La foto de perfil de estef.dev"
+              title="estef.dev"
+            />
+            estef.dev
+          </header>
+          <p>texto jaja</p>
+
+        
+      </div>
+    </main>
+
+    <footer class="container" style="text-align: center">
+      <b>Hecho con ❤ por estef.dev</b>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      //index
+      new Typed('#typed-index', {
+        strings: [
+          'un estudiante',
+          'un programador',
+          'un apasionado a la tecnologia',
+          'Estefan',
+        ],
+        typeSpeed: 80,
+        loop: true,
+      });
+    </script>
+    <script src="changeTheme.js"></script>
+  </body>
+</html>
