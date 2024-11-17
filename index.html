@@ -22,12 +22,14 @@
       href="https://cdn.discordapp.com/avatars/717963226913964126/02bbf1e149dbca70e014c994197761e7.png?size=2048"
     />
  
-
+    <style>
+      #change-theme:hover {cursor: pointer}
+    </style>
 
     <title>Estef - Web personal</title>
   </head>
   <body>
-    <header class="container">
+    <header style="position: sticky; top: 0;" class="container">
       <nav>
         <ul>
           <li>
@@ -37,7 +39,6 @@
         <ul>
           <li>
             <a
-              href="#"
               id="change-theme"
               class="contrast"
               data-tooltip="Cambia el tema"
@@ -52,15 +53,6 @@
               data-tooltip="Portafolio"
               data-placement="bottom"
               ><i class="fa-solid fa-briefcase"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="#about-me"
-              class="contrast"
-              data-tooltip="Sobre mi"
-              data-placement="bottom"
-              ><i class="fa-solid fa-circle-info"></i
             ></a>
           </li>
           <li>
@@ -96,9 +88,7 @@
               >.
             </h1>
             <hr />
-            <a href="#about-me" role="button"
-              ><i class="fa-solid fa-circle-info"></i> Sobre mi</a
-            >
+            <a href="#about-me" class="contrast" style="text-decoration: none;"><i class="fa-solid fa-arrow-down-long"></i> Sobre mi</a>
           </div>
         </div>
       </div>

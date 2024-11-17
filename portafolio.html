@@ -21,11 +21,13 @@
       rel="icon"
       href="https://cdn.discordapp.com/avatars/717963226913964126/02bbf1e149dbca70e014c994197761e7.png?size=2048"
     />
-
+    <style>
+      #change-theme:hover {cursor: pointer}
+    </style>
     <title>Estef - Portafolio</title>
   </head>
   <body>
-    <header class="container">
+    <header style="position: sticky; top: 0;" class="container">
       <nav>
         <ul>
           <li>
@@ -35,7 +37,6 @@
         <ul>
           <li>
             <a
-              href="#"
               id="change-theme"
               class="contrast"
               data-tooltip="Cambia el tema"
@@ -54,21 +55,20 @@
           </li>
           <li>
             <a
-              href="#about"
-              class="contrast"
-              data-tooltip="Información"
-              data-placement="bottom"
-              ><i class="fa-solid fa-circle-info"></i
-            ></a>
-          </li>
-          <li>
-            <a
               href="#projects"
               class="contrast"
               data-tooltip="Proyectos"
               data-placement="bottom"
               ><i class="fa-solid fa-eye"></i
             ></a>
+          </li>
+          <li>
+            <a 
+            href="#contact"
+            class="contrast"
+            data-tooltip="Contacto"
+            data-placement="bottom"
+            ><i class="fa-solid fa-address-book"></i></a>
           </li>
           <li>
             <a
@@ -84,7 +84,7 @@
     </header>
 
     <main class="container">
-      <div style="display: flex; justify-content: center; height: 70vh">
+      <div style="display: flex; justify-content: center; height: 80vh">
         <div style="align-self: center">
           <div class="grid">
             <div>
@@ -127,6 +127,10 @@
                 style="border-radius: 50%; width: 200px; height: 200px"
               />
             </div>
+          </div>
+          <div style="width: 100%; display: flex; justify-content: center">
+            <a href="#about" class="contrast" style="text-decoration: none;"><i class="fa-solid fa-arrow-down-long"></i> ¿Como conoci la programacion?</a>
+            
           </div>
         </div>
       </div>
@@ -185,6 +189,7 @@
             <article>
               <header>
                 <h3>RabbitBot</h3>
+                <b><i class="fa-brands fa-node-js"></i> <i class="fa-brands fa-js"></i></b>
               </header>
               <p>
                 Un bot multifuncional de Discord con más de 80 funciones, con
@@ -229,6 +234,7 @@
             <article>
               <header>
                 <h3>Minimalist New Tab</h3>
+                <b><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i> <i class="fa-brands fa-js"></i></b>
               </header>
               <p>
                 Una extension de Chrome que reemplaza la nueva pestaña
@@ -266,6 +272,38 @@
           </div>
         </div>
       </div>
+
+      <div id="contact">
+        <hgroup>
+          <h3>Contacto</h3>
+          <p>Ponte en contacto conmigo hoy mismo</p>
+        </hgroup>
+        <div style="display: flex; justify-content: center;">
+          <div style="align-self: center">
+          <form>
+            <article>
+              <header><h3>Completa este formulario</h3></header>
+
+              <label for="nombre">Nombre</label>
+
+              <input type="text" name="nombre" placeholder="Emilio Estefan" id="nombre">
+              <label for="email">Correo electronico</label>
+              <input type="email" name="email" placeholder="example@gmail.com" id="email">
+              
+              <label for="asunto">Motivo del contacto</label>
+              <textarea
+              name="asunto"
+              placeholder="¿Cuanto cobras por una web?"
+              id="asunto"
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+              <footer>Esta informacion sera enviada a estef.dev </footer>
+            </article>
+          </form>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="container" style="text-align: center">
@@ -283,5 +321,6 @@
       });
     </script>
     <script src="changeTheme.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
