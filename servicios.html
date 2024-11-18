@@ -28,22 +28,22 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://estefdev.xyz/card" />
-    <meta property="og:title" content="Estef - Card" />
-    <meta property="og:description" content="No hay mucha descripcion, es una card." />
+    <meta property="og:url" content="https://estefdev.xyz/servicios" />
+    <meta property="og:title" content="Estef - Servicios" />
+    <meta property="og:description" content="Explora los servicios que te puedo dar, por ejemplo un bot de discord o una pagina web." />
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/1255416254609756211/1307570345850572831/image.png?ex=673ac947&is=673977c7&hm=6db85c8114f9f33ae440f6d670e93ebf54a3e60120539eca811d463085361700&" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://estefdev.xyz/card" />
-    <meta property="twitter:title" content="Estef - Card" />
-    <meta property="twitter:description" content="No hay mucha descripcion, es una card." />
+    <meta property="twitter:url" content="https://estefdev.xyz/servicios" />
+    <meta property="twitter:title" content="Estef - Servicios" />
+    <meta property="twitter:description" content="Explora los servicios que te puedo dar, por ejemplo un bot de discord o una pagina web." />
     <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/1255416254609756211/1307570345850572831/image.png?ex=673ac947&is=673977c7&hm=6db85c8114f9f33ae440f6d670e93ebf54a3e60120539eca811d463085361700&" />
-    <meta name="title" content="Estef - Card" />
-    <meta name="description" content="No hay mucha descripcion, es una card." />
+    <meta name="title" content="Estef - Servicios" />
+    <meta name="description" content="Explora los servicios que te puedo dar, por ejemplo un bot de discord o una pagina web." />
 
 
-    <title>Estef - Card</title>
+    <title>Estef - Servicios</title>
   </head>
   <body>
     <header style="position: sticky; top: 0; z-index: 1; background-color: #13171f;" class="container">
@@ -104,42 +104,35 @@
     </header>
 
     <main class="container">
-        <div style="display: flex; justify-content: center; width: 100%;">
-            <div style="align-self: center">
-                <article>
-                    <header>
+        <div style="height: 70vh;">
+            <div class="grid">
+                <div>
                     <hgroup>
-                        <h3>Emilio Estefan</h3>
-                        <p>Un pequeño programador con grandes sueños.</p>
-                    </hgroup>
-                    
-                    </header>
-
-                    
-                    <label>Años</label>
+                    <h1>Mis <span 
+                        id="typed-servicios"
+                        style="
+                      background: linear-gradient(to right, blue, violet);
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    "></span></h1>
+                    <p>Breve introduccion: Bienvenido a mi apartado donde puedes ver que servicios te tengo como propuesta, apoyame comprando algun servicio para poder mantener esta pagina y mis demas proyectos vivos.</p>
                     <hr>
-                    <input type="text" disabled placeholder="14 años">
-
-                    <label>Pais</label>
-                    <hr>
-                    <input type="text" disabled placeholder="México">
-                    
-                    <label>Instagram</label>
-                    <hr>
-                    <input type="text" disabled placeholder="esfaog">
-
-                    <label>Hobbie favorito</label>
-                    <hr>
-                    <input type="text" disabled placeholder="Programar o jugar futbol">
-                   
-                    <label>Dato curioso</label>
-                    <hr>
-                    <input type="text" disabled placeholder="Me gusta las matematicas">
-
-                    <p>Agregare más informacion y pequeños cambios de diseño despues, de momento esto esta bien.</p>
-                    <footer><b>Si lo puedes imaginar lo puedes programar.</b></footer>
-                </article>
+                    <a href="/website/portafolio" style="color: white" data-tooltip="Visita mi portafolio" data-placement="bottom" role="button"><i class="fa-solid fa-briefcase"></i> Checa mi portafolio</a>
+                </hgroup>
+                </div>
+                <div style="align-items: center">
+                    <img style="border-radius: 15px; width: 500px; height: 300px;" src="assets/images/hero_servicios.webp" alt="Foto de programacion" alt="HTML">
+                </div>
             </div>
+        </div>
+
+        <div>
+            <hgroup>
+                <h2>En desarrollo</h2>
+                <p>Este apartado de esta pagina esta siendo desarrollada, aun no esta lista.</p>
+            </hgroup>
+
+            <img src="https://cataas.com/cat" alt="Un gato" title="Un lindo y bello gato">
         </div>
     </main>
 
@@ -147,6 +140,8 @@
       <b>Hecho con ❤ por estef.dev</b>
     </footer>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="assets/javascript/typed-servicios.js"></script>
     <script src="assets/javascript/changeTheme.js"></script>
   </body>
 </html>

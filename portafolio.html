@@ -31,14 +31,14 @@
     <meta property="og:url" content="https://estefdev.xyz/portafolio" />
     <meta property="og:title" content="Estef - Portafolio" />
     <meta property="og:description" content="Mi portafolio como programador, aqui puedes ver mis proyectos, mis habilidades y tienes la oportunidad de contactarme." />
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1255416254609756211/1307538618201673788/image.png?ex=673aabbb&is=67395a3b&hm=fd9de33ee9ee3a9e731a76bac685f4c87f82f8a36f77aacd76c234781cacdd64&" />
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1255416254609756211/1307914035655606378/image.png?ex=673c095d&is=673ab7dd&hm=b74ea713485bc82a7621c02dac1e99d02104c7c25b8fe5b26b6565caa6b2f48e&" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://estefdev.xyz/portafolio" />
     <meta property="twitter:title" content="Estef - Portafolio" />
     <meta property="twitter:description" content="Mi portafolio como programador, aqui puedes ver mis proyectos, mis habilidades y tienes la oportunidad de contactarme." />
-    <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/1255416254609756211/1307538618201673788/image.png?ex=673aabbb&is=67395a3b&hm=fd9de33ee9ee3a9e731a76bac685f4c87f82f8a36f77aacd76c234781cacdd64&" />
+    <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/1255416254609756211/1307914035655606378/image.png?ex=673c095d&is=673ab7dd&hm=b74ea713485bc82a7621c02dac1e99d02104c7c25b8fe5b26b6565caa6b2f48e&" />
     <meta name="title" content="Estef - Portafolio" />
     <meta name="description" content="Mi portafolio como programador, aqui puedes ver mis proyectos, mis habilidades y tienes la oportunidad de contactarme." />
 
@@ -73,6 +73,14 @@
             ></a>
           </li>
           <li>
+            <a 
+            href="/website/servicios"
+            class="contrast"
+            data-tooltip="Servicios"
+            data-placement="bottom"
+            ><i class="fa-solid fa-taxi"></i></a>
+          </li>
+          <li>
             <a
               href="#projects"
               class="contrast"
@@ -83,7 +91,9 @@
           </li>
           <li>
             <a 
-            href="#contact"
+            href="https://fwrd.lol/ServerEstef"
+            target="_blank"
+            rel="noopener noreferrer"
             class="contrast"
             data-tooltip="Contacto"
             data-placement="bottom"
@@ -153,7 +163,11 @@
       <hr>
 
       <div>
-        <article id="about">
+        <hgroup>
+          <h2>Articulo sobre mi historia con la programacion.</h2>
+          <p>Historia resumida de mi relacion con el mundo de la tecnologia.</p>
+        </hgroup>
+        <article>
           <header>
             <img
               style="border-radius: 50%; width: 32px; height: 32px"
@@ -166,33 +180,10 @@
 
           <h3>¿Como conoci la programación?</h3>
           <hr />
-
-          <p>
-            Mi primer contacto con la programacion si no me equivoco fue con un
-            bot de discord, la verdad que no entendia nada,
-            <mark>tarde 1 semana en poder prender mi primer bot</mark> pero lo
-            disfrute mucho, en ese tiempo no tenia la idea de programar por
-            gusto, solo hacia porque tenia un servidor de discord. Pero más
-            tarde vi que mucha gente compartia su bot y yo tambien queria
-            hacerlo, es decir, hacer un bot publico.
-          </p>
-
-          <p>
-            Abandone ese proyecto del bot que se llamaba <mark>Duck Bot</mark> y
-            empeze a ver sobre desarrollo web, siempre me preguntaba "¿Cómo es
-            que se hacen los sitios webs que visito?", fue asi como conoci a
-            <mark>HTML y CSS</mark>, estuve probando pero nunca me salia las
-            paginas que tenia en mente, luego tambien intente hacer otros bots
-            para poder verificarlos, ese era mi sueño principal por asi decirlo.
-          </p>
-
-          <p>
-            Y con eso llegamos al presente, ahora estoy trabajando en un bot
-            llamado <mark>RabbitBot</mark>, puedes ver más informacion de este
-            proyecto en <a href="/portafolio.html#projects">mis proyectos.</a>.
-          </p>
-
-          <footer>Este articulo fue escrito el 14 de noviembre del 2024</footer>
+          <p>Parece que esto esta muy solo, (se esta desarrollando)</p>
+        
+           <img src="https://cataas.com/cat" alt="Un gato" title="Un lindo y bello gato">
+          <footer>Este articulo fue escrito el ? de noviembre del 2024</footer>
         </article>
       </div>
 
@@ -208,7 +199,7 @@
             <article>
               <header>
                 <h3>RabbitBot</h3>
-                <b><i class="fa-brands fa-node-js"></i> <i class="fa-brands fa-js"></i></b>
+                <b><a class="contrast" data-tooltip="Node.js"><i class="fa-brands fa-node-js"></i></a> <a class="contrast" data-tooltip="JavaScript"><i class="fa-brands fa-js"></i></a> <a class="contrast" data-tooltip="MongoDB"><i class="fa-solid fa-database"></i></a></b>
               </header>
               <p>
                 Un bot multifuncional de Discord con más de 80 funciones, con
@@ -253,7 +244,7 @@
             <article>
               <header>
                 <h3>Minimalist New Tab</h3>
-                <b><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i> <i class="fa-brands fa-js"></i></b>
+                <b><a class="contrast" data-tooltip="HTML"><i class="fa-brands fa-html5"></i></a> <a class="contrast" data-tooltip="CSS"><i class="fa-brands fa-css3"></i></a> <a class="contrast" data-tooltip="JavaScript"><i class="fa-brands fa-js"></i></a></b>
               </header>
               <p>
                 Una extension de Chrome que reemplaza la nueva pestaña
@@ -292,37 +283,7 @@
         </div>
       </div>
 
-      <div id="contact">
-        <hgroup>
-          <h3>Contacto</h3>
-          <p>Ponte en contacto conmigo hoy mismo</p>
-        </hgroup>
-        <div>
-          <div>
-          <form>
-            <article>
-              <header><h3>Completa este formulario</h3></header>
-
-              <label for="nombre">Nombre</label>
-
-              <input type="text" name="nombre" placeholder="Emilio Estefan" id="nombre">
-              <label for="email">Correo electronico</label>
-              <input type="email" name="email" placeholder="example@gmail.com" id="email">
-              
-              <label for="asunto">Motivo del contacto</label>
-              <textarea
-              name="asunto"
-              placeholder="¿Cuanto cobras por una web?"
-              id="asunto"
-            ></textarea>
-
-            <button type="submit">Enviar</button>
-              <footer>Esta informacion sera enviada a estef.dev </footer>
-            </article>
-          </form>
-          </div>
-        </div>
-      </div>
+      
     </main>
 
     <footer class="container" style="text-align: center">
@@ -332,6 +293,5 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="assets/javascript/typed-portafolio.js"></script>
     <script src="assets/javascript/changeTheme.js"></script>
-    <script src="assets/javascript/contact.js"></script>
   </body>
 </html>
